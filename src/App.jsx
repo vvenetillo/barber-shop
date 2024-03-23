@@ -3,6 +3,7 @@ import Card from './components/Card/Card'
 import Person from './components/Person/Person'
 import About from './components/About/About'
 import Catalog from './components/Catalog/Catalog'
+import Footer from './components/Footer/Footer'
 
 import './App.css'
 
@@ -15,6 +16,7 @@ function App() {
     <Person />
     <About />
     <Catalog />
+    <Footer />
     </>
   )
 }

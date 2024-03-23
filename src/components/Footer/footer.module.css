@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(90deg, rgba(30,30,30,1) 37%, rgba(132,132,132,1) 100%); 
+    box-shadow: 10px 20px 20px #c9b6b6;
+}
+
+.socialmedia{
+    display: flex;
+}
+
+
+.social{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+
+.social li{
+    flex-direction: row;
+    margin: 10px;
+}
+
+
+.like .facebook
+.instagram{
+    color:rgb(228, 236, 242);
+    padding:15px;
+}
+
+
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.barber{
+    width: 200px;
+    height: auto;
+}
+
+.infos p{
+    font-size: 20px;
+}
