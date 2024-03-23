@@ -1,0 +1,57 @@
+.content1{
+  background-color: #fff1f1;
+  box-shadow: 1px 2px 2px #c9b6b6;
+}
+.container {
+    width: 100%;
+    max-width: 800px; 
+  }
+  
+  .flexContainer {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+  }
+  
+  .barber {
+    width: 512px; 
+    height: 412px;
+    border-radius: 10px;
+    margin-right: 350px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+
+  }
+
+  .aboutwe {
+    display: flex;
+    align-items: center; 
+    font-size: 36px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 300;    
+  }
+  
+  .line{
+    border: 1px solid #cc7272;
+    box-shadow: 0 10px 10px;
+    width: 20vw;
+    height: 0;
+    margin: 5px;
+  }
+  
+  .about {
+    margin-top: 15px;
+    color: black;
+    font-size: 25px;
+    max-width: 750px;
+    text-align: justify;
+    width: 400px;
+    height: auto;
+  }
+  

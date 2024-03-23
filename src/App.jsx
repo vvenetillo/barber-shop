@@ -1,5 +1,8 @@
 import Navbar from './components/Navbar/Nav'
-import Section from './components/Section/Section'
+import Card from './components/Card/Card'
+import Person from './components/Person/Person'
+import About from './components/About/About'
+import Catalog from './components/Catalog/Catalog'
 
 import './App.css'
 
@@ -8,7 +11,10 @@ function App() {
   return (
     <>
     <Navbar />
-    <Section />
+    <Card />
+    <Person />
+    <About />
+    <Catalog />
     </>
   )
 }

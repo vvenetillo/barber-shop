@@ -1,7 +1,7 @@
 import barber from '../../assets/insp/background.jpg';
 import style from './section.module.css'; 
 
-function Section() {
+function Card() {
   return (
    <section className={style.container}>
     <div className={style.background}>
@@ -15,4 +15,4 @@ function Section() {
   );
 }
 
-export default Section;
+export default Card;
