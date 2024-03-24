@@ -63,3 +63,33 @@ li:hover{
     cursor: pointer;
 }
 
+.modal{
+    display:flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+    left: 0;
+    right: 0;
+    width: 90vw;
+    height: 90%;
+    padding: 10px;
+    background-color: #efe7e7fb;
+    overflow: hidden;
+}
+
+
+.atendimento{
+    width: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.timer{
+    border-radius: 5px;
+    overflow: hidden;
+}
