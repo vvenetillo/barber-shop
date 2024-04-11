@@ -47,15 +47,17 @@ li:hover{
 
 .atendimento{
     display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 244px;
-    height: 34px;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50px;
     margin: 15px;
 }
 
 .agendar{
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px 17px;
     background-color: transparent;
     border:solid 2px #FFFFFF;
