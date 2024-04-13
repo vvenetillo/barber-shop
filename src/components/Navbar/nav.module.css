@@ -47,11 +47,11 @@ li:hover{
 
 .atendimento{
     display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 100vw;
-    height: 50px;
     margin: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 .agendar{
@@ -65,33 +65,56 @@ li:hover{
     cursor: pointer;
 }
 
-.modal{
-    display:flex;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin: 50px;
-    left: 0;
-    right: 0;
-    width: 90vw;
-    height: 90%;
-    padding: 10px;
-    background-color: #efe7e7fb;
-    overflow: hidden;
-}
-
-
-.atendimento{
-    width: 100px;
-    text-align: center;
+.modal1 {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 10px;
     border-radius: 8px;
-}
-
-.timer{
+    width: 400px;
+    height: auto;
+    margin: 55px;
+    max-width: 90%;
+  }
+  
+  .modal h2 {
+    margin-bottom: 20px;
+  }
+  
+  .selection {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .modal label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .modal button {
+    background-color: #bc9d96;
+    color: rgb(33, 31, 31);
+    border: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    overflow: hidden;
-}
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color: #aef5dc;
+  }
+  
+
+  span{
+    color: black;
+  }
+
+  .selecao,
+  .servico{
+    color: black;
+  }
