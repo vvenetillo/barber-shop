@@ -69,6 +69,7 @@ li:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+   
   }
   
   .modal {
@@ -114,7 +115,7 @@ li:hover{
     color: black;
   }
 
-  .selecao,
-  .servico{
+.selecao,
+.servico{
     color: black;
   }

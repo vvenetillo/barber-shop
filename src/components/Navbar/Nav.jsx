@@ -14,7 +14,8 @@ import style from "../Navbar/nav.module.css";
 
 function AgendarAtendimentoModal({ isOpen, onClose }) {
   const [selecao, setSelecao] = useState("");
-  const [servico, setServico] = useState()
+  const [servico, setServico] = useState();
+
   const handleChange = (event) => {
     setSelecao(event.target.value); 
     
@@ -22,6 +23,8 @@ function AgendarAtendimentoModal({ isOpen, onClose }) {
 const handleChangeService = (event) => {
   setServico(event.target.value);
 }
+
+
   return (
     <Modal
       open={isOpen}
@@ -40,6 +43,7 @@ const handleChangeService = (event) => {
                         <option key={barbeiro} value={barbeiro}>{barbeiro}</option>
                     ))}
                 </optgroup>
+                
                   </select>
                 
                 <label htmlFor="">Escolha o serviço:</label>
@@ -50,7 +54,9 @@ const handleChangeService = (event) => {
                         <option key={corte} value={corte}>{corte}</option>
                     ))}
                 </optgroup>
+
                 </select>
+              
             {selecao && (
                 <div className={style.selecao}>
                     <h2 className={style.selecao}>Dados do item selecionado:</h2>
@@ -65,6 +71,7 @@ const handleChangeService = (event) => {
                     <p className={style.servico}>Serviço desejado: {Items.corte[servico]}</p>
                 </div>
             )}
+            
 
         <Date size="50px" />
         

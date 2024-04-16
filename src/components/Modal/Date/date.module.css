@@ -1,0 +1,22 @@
+.button_confirm{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.agendamento1{
+    display: flex;
+    max-width: 400px;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.confirm_hour{
+    display: flex;
+    margin: 5px;
+}
+
+.date,
+.hour{
+    color: black;
+}
