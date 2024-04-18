@@ -13,6 +13,11 @@
 
 .confirm_hour{
     display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.nameAndSurname{
     margin: 5px;
 }
 
