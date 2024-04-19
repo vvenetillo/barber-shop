@@ -51,9 +51,9 @@
 }
 
 
-@media(max-width: 750px) {
+@media(max-width: 650px) {
   .container{
-    min-width: 400px;
+    width: 100vw;
   }
   .exp{
     display: flex;
