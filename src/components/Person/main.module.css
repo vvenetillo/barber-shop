@@ -46,13 +46,13 @@ p{
     color: #f2f2f2;
 }
 
-@media(max-width: 750px) {
+@media(max-width: 650px) {
     .container{
         flex-direction: column; 
         height: auto; 
     }
     .atributos {
-        width: 90%; 
+        width: 50%; 
     }
     .barbeiro{
         width: 100%; 

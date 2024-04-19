@@ -47,3 +47,10 @@
 .infos p{
     font-size: 20px;
 }
+
+@media(max-width: 650px) {
+    .container{
+        flex-direction: column; 
+        height: auto; 
+    }
+}
