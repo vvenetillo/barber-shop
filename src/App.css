@@ -7,5 +7,5 @@
 }
 
 .swal2-container {
-  z-index: 09999999999; /* Defina um valor alto para garantir que o SweetAlert seja exibido acima de outros elementos */
+  z-index: 09999999999; 
 }

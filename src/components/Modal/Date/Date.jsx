@@ -24,6 +24,20 @@ const Modal = () => {
     setTime(e.target.value);
   };
 
+  function formatDate(date) {
+    
+    const day = date.getDate().toString().padStart(2, '0');
+    const month = (date.getMonth() + 1).toString().padStart(2, '0'); 
+    const year = date.getFullYear();
+  
+    
+    return `${day}/${month}/${year}`;
+  }
+  
+  
+  const data = new Date(); 
+  const formattedDate = formatDate(data);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -39,8 +53,11 @@ const Modal = () => {
     Swal.fire({
       icon: 'success',
       title: 'Agendamento Realizado!',
-      text: `Obrigado, ${name}! Seu agendamento foi registrado com sucesso.`,
-    });
+      text: `Obrigado, ${name}! Seu agendamento foi registrado para ${formattedDate}, ${time} horas`,
+    })
+    setTimeout(function() {
+      location.reload();
+  }, 3000);
   };
 
   const generateTimeOptions = () => {

@@ -1,121 +1,144 @@
-.navbar{
-    background: linear-gradient(90deg, rgba(30,30,30,1) 37%, rgba(132,132,132,1) 100%);    
-    /* backdrop-filter: blur(10px);
-    z-index: 9999px;
-    top:0;
-    left: 0;
-    position: fixed; */
-    width: 100%;
-    height:99px;
-    display: flex;
-    justify-content: space-between;
-    
+.navbar {
+  background: linear-gradient(90deg, rgba(30, 30, 30, 1) 37%, rgba(132, 132, 132, 1) 100%);
+  width: 100%;
+  height: 99px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu{
-    display: flex;
-    flex-direction: column;
+.menu {
+  display: flex;
+  flex-direction: column;
 }
 
-.barber{
-    width: 152px;
-    height: 146px;
+.barber {
+  width: 152px;
+  height: 146px;
 }
 
-.items{
-    display: flex;
-    margin:0;
-    list-style: none;
+.items {
+  display: flex;
+  margin: 0;
+  list-style: none;
 }
 
-li{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    align-items: center;
-    margin-bottom: 47px;
-    font-style: bold;
-    color: #ffff;
-    font-size: 20px;
+li {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+  margin-bottom: 47px;
+  font-style: bold;
+  color: #ffff;
+  font-size: 20px;
 }
 
-.agendar:hover ,
-li:hover{
-    color: #bbb990;
-    cursor: pointer;
+.agendar:hover,
+li:hover {
+  color: #bbb990;
+  cursor: pointer;
 }
 
-.atendimento{
-    display: flex;
-    margin: 15px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+.atendimento {
+  display: flex;
+  margin: 15px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
-.agendar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 17px;
-    background-color: transparent;
-    border:solid 2px #FFFFFF;
-    color: #FFFFFF;
-    cursor: pointer;
+.agendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 17px;
+  background-color: transparent;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .modal1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-  }
-  
-  .modal {
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    width: 400px;
-    height: auto;
-    margin: 55px;
-    max-width: 90%;
-  }
-  
-  .modal h2 {
-    margin-bottom: 20px;
-  }
-  
-  .selection {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .modal label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .modal button {
-    background-color: #bc9d96;
-    color: rgb(33, 31, 31);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .modal button:hover {
-    background-color: #aef5dc;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  span{
-    color: black;
-  }
+.modal {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 400px;
+  height: auto;
+  margin: 55px;
+  max-width: 90%;
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+}
+
+.selection {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.modal label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal button {
+  background-color: #bc9d96;
+  color: rgb(33, 31, 31);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #aef5dc;
+}
+
+span {
+  color: black;
+}
 
 .selecao,
-.servico{
-    color: black;
+.servico {
+  color: black;
+}
+
+@media screen and (max-width: 750px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
   }
+  
+  .menu {
+    margin-top: 20px;
+  }
+  
+  .barber {
+    margin-bottom: 20px;
+  }
+  
+  .items {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 10px;
+    margin-bottom: 20px;
+  }
+  
+  .agendar {
+    margin-top: 20px;
+  }
+}
