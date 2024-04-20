@@ -95,8 +95,11 @@ function Navbar() {
 
   return (
     <>
-      <nav className={style.navbar}>
+      <nav className={style.navbar} id="navbar">
+        <div className={style.imglogo}>
+
         <img src={barber} alt="" className={style.barber} />
+        </div>
 
         <div className={style.menu}>
           <ul className={style.items}>

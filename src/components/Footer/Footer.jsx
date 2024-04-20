@@ -1,6 +1,7 @@
 import { BiLike } from "react-icons/bi";
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa6";
+import { SlArrowUp } from "react-icons/sl";
 
 import barber1 from "../../assets/insp/barber1.png";
 
@@ -26,7 +27,7 @@ function Footer() {
                <p>Desenvolvido por Victor Venetillo &copy;</p>
             </section>
 
-           
+           <a href="#navbar"><SlArrowUp className={style.arrow} /></a> 
         </footer>
         </>
      );

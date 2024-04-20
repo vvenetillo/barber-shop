@@ -48,9 +48,41 @@
     font-size: 20px;
 }
 
-@media(max-width: 650px) {
-    .container{
-        flex-direction: column; 
-        height: auto; 
+@keyframes jumper {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    animation: jumper 1s infinite; 
+}
+
+@media (max-width: 650px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .arrow {
+        max-width: none; /* Remover o tamanho máximo na visualização responsiva */
     }
 }
