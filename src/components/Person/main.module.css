@@ -1,10 +1,10 @@
 .container{
     background: #696969;
     display: flex;
-    width: 98.9vw;
+    width: 100vw;
     height: 400px;
-    justify-content: center; /* centraliza o conteúdo horizontalmente */
-    align-items: center; /* centraliza o conteúdo verticalmente */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .person{
@@ -50,6 +50,7 @@ p{
     .container{
         flex-direction: column; 
         height: auto; 
+        width: 100%;
     }
     .atributos {
         width: 50%; 
