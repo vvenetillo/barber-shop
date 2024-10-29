@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Modal } from "@mui/material";
+import {Navbar, Nav} from 'react-bootstrap';
 
 import time from "../../assets/insp/tesoura.png";
 import pole from "../../assets/insp/pole.png";
@@ -82,7 +83,7 @@ const handleChangeService = (event) => {
   );
 }
 
-function Navbar() {
+function Navbar1() {
   const [modalOpen, setModalOpen] = useState(false);  
 
   const handleModalOpen = () => {
@@ -92,10 +93,13 @@ function Navbar() {
   const handleModalClose = () => {
     setModalOpen(false);
   };
-
+  
+  
   return (
     <>
-      <nav className={style.navbar} id="navbar">
+    <Navbar bg={style.navbar} variant="tabs" expand="lg" fixed="top">
+    <Navbar.Collapse id="responsive-navbar-nav">
+      <Nav className={style.navbar} id="navbar">
         <div className={style.imglogo}>
 
         <img src={barber} alt="" className={style.barber} />
@@ -103,19 +107,19 @@ function Navbar() {
 
         <div className={style.menu}>
           <ul className={style.items}>
-            <a href="#">
+            <a href="#time">
               <li className="time">
                 <img srcSet={time} alt="" />
                 Time
               </li>
             </a>
-            <a href="#">
+            <a href="#espaço">
               <li className="espaço">
                 <img src={pole} alt="" />
                 Espaço
               </li>
             </a>
-            <a href="#">
+            <a href="#serviço">
               <li className="serviços">
                 <img src={mustache} alt="" />
                 Serviços
@@ -129,18 +133,21 @@ function Navbar() {
             type="button"
             onClick={handleModalOpen}
             className={style.agendar}
-          >
+            >
             Agendar  Atendimento
           </button>
         </div>
-      </nav>
 
       <AgendarAtendimentoModal
         isOpen={modalOpen}
         onClose={handleModalClose}
-      />
+        />
+        </Nav>
+
+        </Navbar.Collapse>
+        </Navbar>
     </>
   );
 }
 
-export default Navbar;
+export default Navbar1;

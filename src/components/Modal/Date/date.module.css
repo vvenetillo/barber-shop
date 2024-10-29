@@ -47,3 +47,10 @@
         justify-content: flex-start; 
     }
 }
+
+.react-calendar__tile--now {
+    background-color: #4CAF50; /* Cor de fundo do dia atual */
+    color: white; /* Cor do texto */
+    border-radius: 50%; /* Deixa a célula redonda */
+  }
+  

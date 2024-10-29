@@ -80,9 +80,11 @@
     .container {
         flex-direction: column;
         height: auto;
+        background: linear-gradient(180deg, rgba(132, 132, 132, 1)10%,  rgba(30, 30, 30, 1)  70%);
+
     }
 
     .arrow {
-        max-width: none; /* Remover o tamanho máximo na visualização responsiva */
+        max-width: none; 
     }
 }

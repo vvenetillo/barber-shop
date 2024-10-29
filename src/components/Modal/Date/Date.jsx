@@ -14,6 +14,7 @@ const Modal = () => {
 
   const handleDateChange = (date) => {
     setDate(date);
+    setTime('');
   };
 
   const handleNameChange = (e) => {
@@ -29,17 +30,16 @@ const Modal = () => {
     const day = date.getDate().toString().padStart(2, '0');
     const month = (date.getMonth() + 1).toString().padStart(2, '0'); 
     const year = date.getFullYear();
-  
     
     return `${day}/${month}/${year}`;
   }
+
   
-  
-  const data = new Date(); 
-  const formattedDate = formatDate(data);
+  const selectedDateTime = new Date(date);
+  const formattedDate = formatDate(selectedDateTime);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault();   
 
     if (!date || !time || !name) {
       Swal.fire({
@@ -49,23 +49,44 @@ const Modal = () => {
       });
       return;
     }
+    if (selectedDateTime <= new Date()) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Data e Hora Inválidas',
+        text: 'Por favor, escolha uma data e hora válida.',
+      });
+      return;
+    }
 
     Swal.fire({
       icon: 'success',
       title: 'Agendamento Realizado!',
-      text: `Obrigado, ${name}! Seu agendamento foi registrado para ${formattedDate}, ${time} horas`,
-    })
-    setTimeout(function() {
+      text: `Obrigado, ${name}! Seu agendamento foi registrado para ${formattedDate}, ${time} horas.`,
+    });
+    setTimeout(function () {
       location.reload();
-  }, 3000);
+    }, 4000);
   };
 
   const generateTimeOptions = () => {
     const options = [];
+    const now = new Date();
+    const isToday = date.toDateString() === now.toDateString();
+
     for (let hour = 9; hour < 20; hour++) {
       for (let minute = 0; minute < 60; minute += 60) {
         const timeString = `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`;
-        options.push(timeString);
+
+        if (isToday) {
+          const optionDateTime = new Date(date);
+          optionDateTime.setHours(hour, minute, 0, 0);
+
+          if (optionDateTime > now) {
+            options.push(timeString);
+          }
+        } else {
+          options.push(timeString);
+        }
       }
     }
     return options;
